@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To-Do List</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="todo-app bg-gray-200"> 
+  <div class="container mx-auto px-4 py-8 ">
+    <h1 class="text-2xl font-bold mb-4 flex item-center justify-center">To-Do List</h1>
+    <input type="text" id="taskInput" placeholder="Add a new task" class="w-full rounded-md border-gray-300 py-2 px-4 mb-4" border>
+    <button id="addButton" class="flex justify-center item-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Enter</button>
+    <ul class="todo-list mt-8">
+      <li class="todo-item flex items-center mb-2">
+        <input type="checkbox" class="mr-2">
+        <label class="flex-1">Buy groceries</label>
+        <div class="button-group">
+          <button class="updateButton bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Update Task</button>
+          <button class="deleteButton bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Delete Task</button>
+        </div>
+      </li>
+      <li class="todo-item flex items-center mb-2">
+        <input type="checkbox" class="mr-2">
+        <label class="flex-1">Walk the dog</label>
+        <div class="button-group">
+          <button class="updateButton bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Update Task</button>
+          <button class="deleteButton bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Delete Task</button>
+        </div>
+      </li>
+      <li class="todo-item flex items-center mb-2">
+        <input type="checkbox" class="mr-2">
+        <label class="flex-1">Do laundry</label>
+        <div class="button-group">
+          <button class="updateButton bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Update Task</button>
+          <button class="deleteButton bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Delete Task</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <script src="test.js"></script>
+</body>
+</html>
